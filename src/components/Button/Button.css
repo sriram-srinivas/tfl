@@ -1,0 +1,4 @@
+.defaultStyle, .defaultStyle *{
+    outline: 0;
+    cursor: pointer !important;
+}

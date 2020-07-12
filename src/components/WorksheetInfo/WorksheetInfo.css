@@ -1,0 +1,94 @@
+.worksheetInfoPanel,.worksheetPreviewPanel,.worksheetPreviewImgPanel,.worksheetPreviewFilterPanel{
+    display: inline-block;
+    vertical-align: Top;
+}
+
+.worksheetInfoPanel{
+    width:50%;
+}
+
+.worksheetPreviewPanel{
+    width:50%;
+    display:flex;
+    float:right;
+}
+
+.worksheetPreviewImgPanel{
+    width:50%;
+    padding: 10% 4% ;
+}
+.worksheetPreviewFilterPanel{
+    width: 40%;
+    position: relative;
+}
+
+
+.worksheetTitle,.worksheetDescTitle,.worksheetType{
+    font-weight: normal;
+    margin:1% 0 0 0;
+}
+
+.worksheetTitle{
+    color:#3782d2;
+}
+
+.attributespanel{
+    margin: 10px 0px;
+}
+
+.rating{
+    width: 47%;
+    font-size: 14px;
+    color: orange;
+}
+
+.dwldDiv{
+    margin: 0px 20px;
+}
+
+.dwld{
+    width:15px;
+    height: 15px;
+    vertical-align: baseline;
+}
+
+.dwlCount{
+    font-weight: bold;
+    margin-left: 2%;
+    font-size: 14px;
+}
+
+.worksheetDesc{
+    font-size: 14px;
+}
+
+.dwldWorksheetBtn{
+    padding:4% 10%;
+    color: #fff;
+    background-color: #064099;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.btnPanel{
+    text-align: center;
+}
+
+.worksheetPreviewIMG{
+    width: 100%;
+    padding: 6% 0%;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.socialMediaIcon{
+    font-size: 20px;
+    color:#FFF;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 50%;
+    margin:0px 5px;
+    cursor: pointer;
+}

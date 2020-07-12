@@ -1,0 +1,76 @@
+.pageLinkPanel{
+    display: flex;
+    background-color: #303030;
+    color: #fff;
+}
+.leftSegment{
+    width:23%;
+}
+.contentSegment{
+    width:63%;
+    display: flex;
+}
+
+.rightSegment{
+    width:15%;
+}
+ 
+.CopyRightPanel{
+    background-color: #1E1E1E;
+    color: #fff;
+}
+.SocialMediaPanel{
+    margin: auto;
+    width: 300px;
+    text-align: center;
+    padding: 1%;
+}
+
+.socialMediaIcon{
+    font-size: 20px;
+    background-color: #303030;
+    color:#FFF;
+    display: inline-block;
+    padding: 1% 3%;
+    border-radius: 50%;
+    margin:0% 2%;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.socialMediaIcon:hover{
+    color: #303030;
+    background-color: #FFF;
+}
+.FooterTxtPanel{
+    text-align: right;
+}
+.FooterTxt{
+    margin: 1%;
+    display: inline-block;
+    font-size: 14px;
+
+}
+
+/*List style*/
+.ListContainer{
+    display: inline-block;
+    padding: 2% 1%; 
+    width:15%;
+   
+}
+.LinkDiv{
+    padding:.5%;
+    display: block;
+}
+
+.FooterLink{
+    text-decoration: none;
+    color: inherit;
+    font-size: 11px;
+    transition: all .3s ease-in-out;
+}
+
+.FooterLink:hover{
+    text-decoration: underline;
+}

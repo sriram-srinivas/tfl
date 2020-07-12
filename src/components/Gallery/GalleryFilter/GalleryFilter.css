@@ -1,0 +1,49 @@
+.GalleryFilterPanel{
+    position: absolute;
+    right:0;
+    top:17%;
+    width:40%;
+}
+
+.GalleryFilterHeader{
+    font-weight: bold;
+    margin-block-start: .33em;
+    margin-block-end: .33em;
+}
+
+.FilterDiv{
+    padding: 1%;
+    width: 100%;
+}
+
+.FilterLink{
+    color : inherit;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.FilterDiv:hover{
+    background-color: rgba(230,230,250,0.5);
+}
+
+/*WorksheetInfoCSS*/
+
+.WorksheetInfoFilterPanel{
+    position: absolute;
+    left:10%;
+    top:20%;
+    width:50%;
+}
+
+.WorksheetInfoFilterDiv{
+    padding: 0px 10px 0px 5px ;
+    margin: 5px 0px;
+    width: 100%;
+    border: 1px solid #CCC;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.WorksheetInfoFilterDiv:hover{
+    background-color: rgba(230,230,250,0.5);
+}

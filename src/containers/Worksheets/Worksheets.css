@@ -1,0 +1,55 @@
+.WorksheetPanel{
+    display:flex;
+}
+
+.LeftPanel,.GalleryPanel,.LeftADBanner,.RightADBanner{
+    display: inline-block;
+}
+
+.LeftADBanner,.RightADBanner{
+    width:5%;
+}
+
+.LeftPanel{
+    width:15%;
+    position: relative;
+}
+
+.GalleryPanel{
+    width:65%;
+}
+
+.GalleryMenuPanel{
+    margin-top:2%;
+}
+
+/*Worksheet searcbar styles*/
+.SearchDiv{
+    margin-top:1%;
+    width: 100%;
+    position: relative;
+}
+
+.WorksheetSearch{
+    border-radius: 16px;
+    width: 97%;
+    border:1px solid #aaa;
+    padding:1%;
+    outline-width: 0
+}
+
+.WorksheetSearch:focus, .WorksheetSearch:hover{
+    border:1px solid #3385FF;
+}
+
+.SearchBarIcon{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 2%;
+    top: 25%;
+}
+
+.WorksheetInfoWrapper{
+    display: inline-block;
+}

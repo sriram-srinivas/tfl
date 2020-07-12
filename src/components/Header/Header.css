@@ -1,0 +1,53 @@
+.HeaderContainer {
+    display: flex;
+    align-items: center;
+}
+
+.LogoPanel,.ContentPanel,.MenuPanel,.LoginPanel{
+    display: inline-block;
+}
+
+.LogoPanel{
+    width: 19%;
+}
+
+.Logo{
+    width:90px;
+    margin:auto;
+    display: block;
+}
+
+.ContentPanel{
+    width:39%;
+}
+.MenuPanel{
+    width:19%;
+}
+.LoginPanel{
+    width:19%;
+}
+.Explore{
+    display: inline-block;
+    cursor: pointer;
+}
+.loginButton{
+    display: inline-block !important;
+    margin-left: 30%;
+
+}
+.signupButton,.loginButton{
+    padding:10px 35px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #186AAA;
+    border: none;
+    border-radius: 50px;
+    display: block;
+    cursor: pointer;
+}
+
+.signupButton:hover,.loginButton:hover{
+    color: #0F52BA;
+    background-color: #ccc;
+    vertical-align: middle;
+}

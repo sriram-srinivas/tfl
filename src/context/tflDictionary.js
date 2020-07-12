@@ -20,7 +20,7 @@ const labelDictionary = {
     'signUpGoogle':'Sign up with Google',
     'worksheetsPerPage':12,
     dummyList :[
-        {"id":1,"title":"Human", "rating":1.0, "Description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore...","url":"https://raw.githubusercontent.com/sriram-srinivas/dummyJson/master/Human.jpg","downloadsCount":1101},
+        {"id":1,"title":"Human", "rating":1.0, "Description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore...","url":"https://cdn.education.com/files/1133001_1134000/1133295/file_1133295.gif?width=600","downloadsCount":1101},
         {"id":2,"title":"Birds", "rating":1.5, "Description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore...","url":"https://cdn.education.com/files/1119001_1120000/1119502/file_1119502.png?width=600","downloadsCount":1292},
         {"id":3,"title":"Animals", "rating":2.0, "Description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore...","url":"https://cdn.education.com/files/1133001_1134000/1133651/file_1133651.gif?width=600","downloadsCount":1383},
         {"id":4,"title":"Jobs", "rating":2.5, "Description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore...","url":"https://cdn.education.com/files/1133001_1134000/1133538/file_1133538.gif?width=600","downloadsCount":1474},

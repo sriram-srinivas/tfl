@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import Layout from './components/Layout/Layout';
-import Worksheets from './containers/Worksheets/Worksheets';
+import {BrowserRouter} from 'react-router-dom';
 
 class App extends Component {
 
   render() {
     return (
       <div>
-        <Layout>
-            <Worksheets/>
-        </Layout>
+        <BrowserRouter>
+          <Layout />
+        </BrowserRouter>
       </div>
     );
   }

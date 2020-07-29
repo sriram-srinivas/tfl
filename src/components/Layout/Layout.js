@@ -1,6 +1,9 @@
 import React,{Fragment} from 'react';
+import {Route} from 'react-router-dom';
 import Header from '../Header/Header';
-import Footer from '../Footer/Footer'
+import Footer from '../Footer/Footer';
+import Worksheets from '../../containers/Worksheets/Worksheets';
+import AccountSettings from '../../containers/AccountSettings/AccountSettings';
 
 const layout = props =>{
     return(
@@ -9,7 +12,8 @@ const layout = props =>{
                 <Header />
             </div>
             <main>
-                {props.children}
+                <Route path="/" exact component={Worksheets}/>
+                <Route path="/Account" exact component={AccountSettings}/>
             </main>
             <div>
                 <Footer/>

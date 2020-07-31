@@ -19,6 +19,18 @@ const labelDictionary = {
     'signUpFB':'Sign up with Facebook',
     'signUpGoogle':'Sign up with Google',
     'worksheetsPerPage':12,
+    'accountHeader':'Account Details',
+    'changePwdLabel':'Change Password',
+    'editLabel':'Edit',
+    'upgradePremium':'Upgrade Premium',
+    'PlanLabel':'Plan',
+    'accPref':'Account Preferences',
+    'emailPref':'Email Preferences',
+    'connectFB':'Connect with Facebook',
+    'disconnectFB':'Disconnect from Facebook',
+    'connectGO':'Connect with Google',
+    'disconnectGO':'Disconnect from Google',
+    'deActivateAccLabel':'Deactivate Account',
     dummyList :[
         {"id":1,"title":"Human", "rating":1.0, "Description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore...","url":"https://cdn.education.com/files/1133001_1134000/1133295/file_1133295.gif?width=600","downloadsCount":1101},
         {"id":2,"title":"Birds", "rating":1.5, "Description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore...","url":"https://cdn.education.com/files/1119001_1120000/1119502/file_1119502.png?width=600","downloadsCount":1292},
@@ -42,9 +54,9 @@ const labelDictionary = {
         {"id":20,"title":"Alphabets", "rating":1.0, "Description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore...","url":"https://cdn.education.com/files/1137001_1138000/1137796/file_1137796.gif?width=600","downloadsCount":1101}
     ],
     GalleryMenu : [
-        {'id':1,'value':'Printable Worksheets'},
-        {'id':2,'value':'Lesson Plan'},
-        {'id':3,'value':'Online Games'}
+        {'id':1,'value':'Printable Worksheets','to':'/PrintableWorksheets'},
+        {'id':2,'value':'Lesson Plan','to':'/LessonPlan'},
+        {'id':3,'value':'Online Games','to':'/OnlineGames'}
     ],
     GalleryLevelFilter : [
         {'id':1,'value':'Pre-school'},
@@ -82,7 +94,19 @@ const labelDictionary = {
         {"id":5,"title":"Cities", "rating":3.0, "Description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore...","url":"https://cdn.education.com/files/1133001_1134000/1133129/file_1133129.gif?width=600","downloadsCount":1565},
         {"id":6,"title":"States", "rating":3.5, "Description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore...","url":"https://cdn.education.com/files/1133001_1134000/1133480/file_1133480.png?width=600","downloadsCount":1656},
         {"id":7,"title":"Vehicles", "rating":4.0, "Description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore...","url":"https://cdn.education.com/files/1135001_1136000/1135871/file_1135871.png?width=600","downloadsCount":1747}
-      ]
+      ],
+    FieldList : [
+        {"id":1,"label":"User Name","value":"SUD1979"},
+        {"id":2,"label":"Email","value":"sud1979@TFL.in"},
+        {"id":3,"label":"School Name","value":"Nehru Govt High School"},
+        {"id":4,"label":"Designation","value":"Supervisor"},
+        {"id":5,"label":"Phone Number","value":"+91 9789099810"},
+        {"id":6,"label":"Address1","value":"No 6, Vivekanandar Street"},
+        {"id":7,"label":"Address2","value":""},
+        {"id":8,"label":"City","value":"Chennai"},
+        {"id":9,"label":"State","value":"Tamil Nadu"},
+        {"id":10,"label":"Zip Code","value":"600044"}
+    ]
 };
 
 

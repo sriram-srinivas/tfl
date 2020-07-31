@@ -1,5 +1,136 @@
 .AccountPanel{
-    width: 100px;
-    height: 120px;
-    background-color: grey;
+    width: 100%;
+    display: flex;
+}
+.leftAccPanel,.rightAccPanel{
+    width: 10%;
+}
+.accContentPanel{
+    width: 78%;
+}
+.accHeader{
+    color: #186AAA;
+    font-weight: normal;
+    margin: 0%;
+}
+
+.linkPanel h5{
+    display: inline-block;
+    color: #2c87f0;
+    font-weight: normal;
+    margin: 1% 0%;
+    padding: 1px 5px;
+    border-left: 2px solid #ccc;
+    cursor: pointer;
+}
+
+.linkPanel h5:hover{
+    text-decoration: underline;
+}
+
+.infoPanel{
+    padding: 5px 0px 0px;
+}
+
+.FieldCss{
+    width: 100%;
+    padding: 5px 0px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+}
+.FieldLabelCss{
+    width:25%;
+    padding-left: 1%;
+    color: #787878;
+    font-weight: bold;
+    font-size: 12px;
+    box-sizing: border-box;
+}
+
+.FieldValueCss{
+    width:65%;
+    padding-left: 2%;
+    font-size: 12px;
+}
+
+.upgradePanel,.preferencePanel{
+    border: 1px solid #000;
+    border-right: 0px;
+    border-left: 0px;
+    text-align: right;
+    padding: 1%;
+    border-collapse: collapse;
+}
+
+.upgradeButton{
+    display: inline-block !important;
+    padding:15px 30px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #186AAA;
+    border: none;
+    border-radius: 50px;
+    display: block;
+    cursor: pointer;
+}
+
+.preferencePanel{
+    padding: 1% 0%;
+}
+.preferencePanel,.prefLinkPanel,.prefConnectPanel{
+    display: flex;
+    align-items: baseline;
+}
+
+.prefLinkPanel,.prefConnectPanel{
+    width: 50%;
+    font-size: 13px;
+    justify-content: space-around;
+    align-items: baseline;
+}
+.prefConnectPanel{
+    padding: 0% 1%;
+}
+
+.planLabel{
+    font-size: 16px;
+}
+
+.prefLink{
+    color: #2c87f0;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.prefLink:hover{
+    text-decoration: underline;
+}
+
+.connectButton,.disconnectButton{
+    padding: 7px 10px;
+    color: #fff;
+    border: none;
+    width: 50%;
+    border-radius: 10px;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin: 0%;
+    margin-left: 3%;
+    font-size: 13px;
+}
+
+.connectButton{
+    background-color: #186AAA;
+}
+.disconnectButton{
+    background-color: #787878;
+}
+.oAuthIcon{
+    margin: 2%;
+    font-size: 18px;
+}
+.deAcPanel{
+    padding: 1% 1% 3% 1%;
+    font-size: 14px;
+    text-align: right;
 }

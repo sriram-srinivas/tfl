@@ -33,7 +33,6 @@
 .loginButton{
     display: inline-block !important;
     margin-left: 30%;
-
 }
 .signupButton,.loginButton{
     padding:10px 35px;

@@ -6,11 +6,16 @@
 }
 
 .menuLink{
-    color: inherit;
+    color: black;
     text-decoration: none;
     font-size: 12px;
+    cursor: pointer;
 }
 .menuSpan:hover{
     background-color: rgba(230,230,250,0.5);
     border-radius: 10px ;
+}
+
+.active .menuSpan{
+    border-bottom: 3px solid blue;
 }

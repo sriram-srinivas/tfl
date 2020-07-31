@@ -1,6 +1,6 @@
 import React,{useContext} from 'react';
 import loginCSS from './Login.css';
-import  * as images from '../../../assets/images/images';
+import Logo from '../../Logo/Logo'
 import dictionary from '../../../context/tflDictionary';
 import InputText from '../../InputText/InputText';
 import Button from '../../Button/Button';
@@ -9,9 +9,7 @@ const login = props =>{
     const languageDictionary = useContext(dictionary);
     return (
         <div>
-            <div className={loginCSS.LogoPanel}>
-                <img className={loginCSS.Logo}src={images.logoBlue} alt="TFL"/>
-            </div>
+            <Logo PanelClass={loginCSS.LogoPanel} LogoClass={loginCSS.Logo} />
             <div className={loginCSS.LoginLabelPanel}>
                 <h3 className={loginCSS.LoginLabel}>{languageDictionary.loginLabel}</h3>
             </div>
@@ -25,7 +23,7 @@ const login = props =>{
             <div className={loginCSS.loginButtonPanel}>
                 <Button btnType="button" 
                     styleClass={loginCSS.loginButton}>
-                    <label>{languageDictionary.logInFB}</label>
+                    <label>{languageDictionary.loginLabel}</label>
                 </Button>
             </div>
             <hr/>

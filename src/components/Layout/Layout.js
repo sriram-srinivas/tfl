@@ -13,6 +13,7 @@ const layout = props =>{
             </div>
             <main>
                 <Route path="/" exact component={Worksheets}/>
+                <Route path="/PrintableWorksheets" exact component={Worksheets}/>
                 <Route path="/Account" exact component={AccountSettings}/>
             </main>
             <div>

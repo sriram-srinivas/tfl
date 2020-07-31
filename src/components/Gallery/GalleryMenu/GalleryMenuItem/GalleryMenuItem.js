@@ -1,11 +1,14 @@
 import React from 'react';
 import GallMenuItem from './GalleryMenuItem.css'
+import {NavLink} from 'react-router-dom';
  
 const galleryMenuItem = props => {
     return(
-        <span className={GallMenuItem.menuSpan}>
-            <a className={GallMenuItem.menuLink} href="/" target="_self">{props.value}</a>
-        </span>
+        <NavLink to={{pathname:props.to}} exact activeClassName={GallMenuItem.active}>
+            <span className={GallMenuItem.menuSpan}>
+                <label className={GallMenuItem.menuLink}>{props.value}</label>
+            </span>
+        </NavLink>
     )
 };
 

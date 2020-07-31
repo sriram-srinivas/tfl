@@ -2,7 +2,10 @@ import React from 'react';
 
 const labelDictionary = {
     'searchPlaceHolder':'Search',
-    'galleryFilterLabel':'By Level',
+    'bylevelLabel':'By Level',
+    'bySubLabel':'By Subject',
+    'byActivityLabel':'By Activity',
+    'byLessonLabel':'By Lesson',
     'exploreLabel':'Explore',
     'loginLabel':'Log in',
     'signUpLabel':'Sign up',
@@ -64,6 +67,27 @@ const labelDictionary = {
         {'id':3,'value':'Grade 1'},
         {'id':4,'value':'Grade 2'},
         {'id':5,'value':'Grade 3'}
+    ],
+    GallerySubFilter : [
+        {'id':1,'value':'English'},
+        {'id':2,'value':'Maths'},
+        {'id':3,'value':'Science'},
+        {'id':4,'value':'Social'},
+        {'id':5,'value':'Art & Craft'}
+    ],
+    GalleryActivityFilter : [
+        {'id':1,'value':'Writing'},
+        {'id':2,'value':'Colouring'},
+        {'id':3,'value':'Drawing'},
+        {'id':4,'value':'Matching'},
+        {'id':5,'value':'Counting'}
+    ],
+    GalleryLessonFilter : [
+        {'id':1,'value':'Alphabets'},
+        {'id':2,'value':'Rhymes'},
+        {'id':3,'value':'Stories'},
+        {'id':4,'value':'Vowels and Consonants'},
+        {'id':5,'value':'Consonants and Sounds'}
     ],
     ActivityLinks : [
         {'id':1,'value':'Worksheet'},

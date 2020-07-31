@@ -51,12 +51,40 @@ class Worksheets extends Component {
         let worksheetContent = null;
 
         if(this.state.activePage === "Gallery"){
-            galleryLeftFilter = <GalleryFilter 
-                                    title={this.context.galleryFilterLabel}
+            galleryLeftFilter = <span className={GalleryFilterCSS.GalleryFilterPanel}>
+                                    <GalleryFilter 
+                                    title={this.context.bylevelLabel}
+                                    FilterOptions={this.context.GalleryLevelFilter}
                                     GalleryFilterHeader={GalleryFilterCSS.GalleryFilterHeader}
-                                    GalleryFilterPanel={GalleryFilterCSS.GalleryFilterPanel}
                                     FilterDiv={GalleryFilterCSS.FilterDiv}
-                                    FilterLink={GalleryFilterCSS.FilterLink}/>;
+                                    GalleryFilterPanel={GalleryFilterCSS.FilterContainer}
+                                    FilterLink={GalleryFilterCSS.FilterLink}/>
+
+                                    <GalleryFilter 
+                                    title={this.context.bySubLabel}
+                                    FilterOptions={this.context.GallerySubFilter}
+                                    GalleryFilterHeader={GalleryFilterCSS.GalleryFilterHeader}
+                                    FilterDiv={GalleryFilterCSS.FilterDiv}
+                                    GalleryFilterPanel={GalleryFilterCSS.FilterContainer}
+                                    FilterLink={GalleryFilterCSS.FilterLink}/>
+
+                                    <GalleryFilter 
+                                    title={this.context.byActivityLabel}
+                                    FilterOptions={this.context.GalleryActivityFilter}
+                                    GalleryFilterHeader={GalleryFilterCSS.GalleryFilterHeader}
+                                    FilterDiv={GalleryFilterCSS.FilterDiv}
+                                    GalleryFilterPanel={GalleryFilterCSS.FilterContainer}
+                                    FilterLink={GalleryFilterCSS.FilterLink}/>
+
+                                    <GalleryFilter 
+                                    title={this.context.byLessonLabel}
+                                    FilterOptions={this.context.GalleryLessonFilter}
+                                    GalleryFilterHeader={GalleryFilterCSS.GalleryFilterHeader}
+                                    FilterDiv={GalleryFilterCSS.FilterDiv}
+                                    GalleryFilterPanel={GalleryFilterCSS.FilterContainer}
+                                    FilterLink={GalleryFilterCSS.FilterLink}/>
+
+                                </span>;
             galleryNav = <Fragment>
                 <div className={worksheetCSS.GalleryMenuPanel}>
                     <GalleryMenu menuList={this.context.GalleryMenu}/>

@@ -1,8 +1,12 @@
 .GalleryFilterPanel{
     position: absolute;
+    top:14%;
     right:0;
-    top:17%;
-    width:40%;
+    width:80%;
+}
+
+.FilterContainer{
+    margin-bottom: 15%;
 }
 
 .GalleryFilterHeader{

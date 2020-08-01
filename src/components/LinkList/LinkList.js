@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 const linkList = props => {
     return(
@@ -6,7 +7,9 @@ const linkList = props => {
             {props.sourceList.map((link,index) => {
                 return(
                     <div key={link.id} className={props.LinkDiv}>
-                        <a href="https://www.google.com" target="blank" className={props.LinkCSS}>{link.value}</a>
+                        <Link to={link.to} exact="true" className={props.LinkCSS}>
+                            <label>{link.value}</label>
+                        </Link>
                     </div>
                 )
             })}

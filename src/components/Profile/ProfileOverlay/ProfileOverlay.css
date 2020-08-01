@@ -1,0 +1,40 @@
+.overlayContent{
+    text-align: center;
+    padding: 10px 15px;
+    margin: 2% 0%;
+    width: 100%;
+    box-sizing: border-box;
+}
+.profileUserName{
+    font-size: 12px;
+    padding:2%;
+    border-bottom: 1px solid #bbb;
+    display: block;
+}
+
+.logout{
+    font-size: 12px;
+    padding:2%;
+    border-top: 1px solid #bbb;
+    display: block;
+    cursor: pointer;
+}
+.profileActionLink{
+    font-size: 12px;
+    padding:2%;
+    display: block;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+.logout:hover,.LinkDiv:hover{
+    background-color: #ddd;
+}
+
+.ListContainer{
+    display: block;
+    margin: 5px 0px;
+}
+.LinkDiv{
+    display: block;
+}

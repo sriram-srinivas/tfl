@@ -94,7 +94,7 @@ class Worksheets extends Component {
             </Fragment>;
             gallerySort = <div className={worksheetCSS.GallerySortPanel}>
                     <select className={worksheetCSS.GallerySort}>
-                        <option selected="" value="popularity">Popularity</option>
+                        <option value="popularity">Popularity</option>
                         <option value="weightedRating">Highest Rated</option>
                         <option value="dateCreated">Most Recent</option>
                         <option value="title">Title</option>

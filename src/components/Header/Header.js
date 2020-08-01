@@ -5,7 +5,7 @@ import Button from '../Button/Button';
 import Modal from '../UI/Modal/Modal';
 import Login from '../Authenticate/Login/Login';
 import Logo from '../Logo/Logo';
-import {NavLink} from 'react-router-dom';
+import ProfileOption from '../Profile/ProfileOptions/ProfileOptions';
 
 class Header extends Component{
     static contextType = dictionary;
@@ -23,12 +23,30 @@ class Header extends Component{
         this.setState({showLoginPopup: false});
     }
     authenticate = () =>{
-        this.setState({sisAuth:true});
+        this.setState({isAuth:true,showLoginPopup: false});
+    }
+    logout = () =>{
+        this.setState({isAuth:false});
+        
     }
     render(){
+        let loginBtn = <Button btnType="button" 
+                            styleClass={headerCSS.loginButton}
+                            clickEvent={this.showLoginPopup}>
+                            <label>{this.context.loginLabel}</label>
+                        </Button>;
+        let account = <Button btnType="button" 
+                        styleClass={headerCSS.signupButton}>
+                        <label>{this.context.signUpLabel}</label>
+                    </Button>;
+        if(this.state.isAuth){
+            loginBtn = <Button btnType="button" 
+                        styleClass={headerCSS.tryPremiumButton}>
+                        <label>{this.context.tryPremiumLabel}</label>
+                    </Button>;
+            account= <ProfileOption UserName={this.context.FieldList[1].value} logoutEvent={this.logout}/>;
+        }
         return(
-
-
             <Fragment>
                 <Modal show={this.state.showLoginPopup} clickEvent={this.hideLoginPopup}>
                     <Login loginEvent={this.authenticate}/>
@@ -39,20 +57,11 @@ class Header extends Component{
                         
                     </div>
                     <div className={headerCSS.MenuPanel}>
-                        <NavLink to="/Account" exact >
                             <h5 className={headerCSS.Explore}>{this.context.exploreLabel}</h5>
-                        </NavLink>
-                        <Button btnType="button" 
-                            styleClass={headerCSS.loginButton}
-                            clickEvent={this.showLoginPopup}>
-                            <label>{this.context.loginLabel}</label>
-                        </Button>
+                        {loginBtn}
                     </div>
                     <div className={headerCSS.LoginPanel}>
-                        <Button btnType="button" 
-                            styleClass={headerCSS.signupButton}>
-                            <label>{this.context.signUpLabel}</label>
-                        </Button>
+                        {account}
                     </div>
                 </div>
                 <hr/>

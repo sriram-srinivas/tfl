@@ -21,7 +21,7 @@ const login = props =>{
                 <label className={loginCSS.forgotLink}>{languageDictionary.forgotPWD}</label>
             </div>
             <div className={loginCSS.loginButtonPanel}>
-                <Button btnType="button" onClick={props.loginEvent}
+                <Button btnType="button" clickEvent={props.loginEvent}
                     styleClass={loginCSS.loginButton}>
                     <label>{languageDictionary.loginLabel}</label>
                 </Button>

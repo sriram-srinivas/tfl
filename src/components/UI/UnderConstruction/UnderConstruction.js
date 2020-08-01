@@ -1,4 +1,4 @@
-import React,{Fragment} from 'react';
+import React from 'react';
 import * as images from '../../../assets/images/images';
 import style from './UnderConstruction.css';
 

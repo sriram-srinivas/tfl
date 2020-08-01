@@ -9,6 +9,8 @@ const labelDictionary = {
     'exploreLabel':'Explore',
     'loginLabel':'Log in',
     'signUpLabel':'Sign up',
+    'tryPremiumLabel':'Try Premium',
+    'logoutLabel':'Log out',
     'TFLURL':'www.tfl.in',
     'FooterTxt':'@TFL|Eblaze Technology',
     'downloadCountLabel':'download(s)',
@@ -62,11 +64,11 @@ const labelDictionary = {
         {'id':3,'value':'Online Games','to':'/OnlineGames'}
     ],
     GalleryLevelFilter : [
-        {'id':1,'value':'Pre-school'},
-        {'id':2,'value':'Kindergarten'},
-        {'id':3,'value':'Grade 1'},
-        {'id':4,'value':'Grade 2'},
-        {'id':5,'value':'Grade 3'}
+        {'id':1,'value':'Pre-school','to':'/preSchool'},
+        {'id':2,'value':'Kindergarten','to':'/KG'},
+        {'id':3,'value':'Grade 1','to':'/G1'},
+        {'id':4,'value':'Grade 2','to':'/G2'},
+        {'id':5,'value':'Grade 3','to':'/G3'}
     ],
     GallerySubFilter : [
         {'id':1,'value':'English'},
@@ -90,18 +92,18 @@ const labelDictionary = {
         {'id':5,'value':'Consonants and Sounds'}
     ],
     ActivityLinks : [
-        {'id':1,'value':'Worksheet'},
-        {'id':2,'value':'Lesson Plan'},
-        {'id':3,'value':'Online Activity'},
-        {'id':4,'value':'Online Games'},
-        {'id':5,'value':'Stories'},
-        {'id':6,'value':'Exercises'}
+        {'id':1,'value':'Worksheet','to':'/PrintableWorksheets'},
+        {'id':2,'value':'Lesson Plan','to':'/LessonPlan'},
+        {'id':3,'value':'Online Activity','to':'/Activity'},
+        {'id':4,'value':'Online Games','to':'/OnlineGames'},
+        {'id':5,'value':'Stories','to':'/Stories'},
+        {'id':6,'value':'Exercises','to':'/Exercises'}
     ],
     PageLinks : [
-        {'id':1,'value':'About Us'},
-        {'id':2,'value':'TFL Product'},
-        {'id':3,'value':'Blog'},
-        {'id':4,'value':'Contact Us'}
+        {'id':1,'value':'About Us','to':'/About'},
+        {'id':2,'value':'TFL Product','to':'/Products'},
+        {'id':3,'value':'Blog','to':'/Blog'},
+        {'id':4,'value':'Contact Us','to':'/Contact'}
     ],
     SocialMedia : [
         {'id':1, 'name': 'facebook', 'class':'fa fa-facebook','url':'https://www.facebook.com'},
@@ -121,7 +123,7 @@ const labelDictionary = {
       ],
     FieldList : [
         {"id":1,"label":"User Name","value":"SUD1979"},
-        {"id":2,"label":"Email","value":"sud1979@TFL.in"},
+        {"id":2,"label":"Email","value":"sudsanam1979@TFL.in"},
         {"id":3,"label":"School Name","value":"Nehru Govt High School"},
         {"id":4,"label":"Designation","value":"Supervisor"},
         {"id":5,"label":"Phone Number","value":"+91 9789099810"},
@@ -130,6 +132,11 @@ const labelDictionary = {
         {"id":8,"label":"City","value":"Chennai"},
         {"id":9,"label":"State","value":"Tamil Nadu"},
         {"id":10,"label":"Zip Code","value":"600044"}
+    ],
+    ProfileActions:[
+        {"id":1,"to":"/Account","value":"Account Settings"},
+        {"id":2,"to":"/Downloads","value":"My Downloads"},
+        {"id":3,"to":"/Collections","value":"My Collections"},
     ]
 };
 

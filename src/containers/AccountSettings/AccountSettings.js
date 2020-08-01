@@ -36,7 +36,7 @@ class AccountSettings extends Component {
                     <div className={AccSettingsCSS.linkPanel}>
                         <h5>{this.context.changePwdLabel}</h5>
                         <h5>{this.context.editLabel}</h5>
-                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        <i className={"fa fa-angle-down"} aria-hidden="true"></i>
                     </div>
                     <div className={AccSettingsCSS.infoPanel}>
                         {infoList}

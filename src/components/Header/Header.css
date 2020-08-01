@@ -45,8 +45,20 @@
     cursor: pointer;
 }
 
-.signupButton:hover,.loginButton:hover{
+.signupButton:hover,.loginButton:hover,.tryPremiumButton:hover{
     color: #0F52BA;
     background-color: #ccc;
-    vertical-align: middle;
+}
+
+.tryPremiumButton{
+    display: inline-block !important;
+    margin-left: 20%;
+    padding:10px 20px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #186AAA;
+    border: none;
+    border-radius: 50px;
+    display: block;
+    cursor: pointer;
 }

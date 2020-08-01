@@ -22,12 +22,16 @@ class Header extends Component{
     hideLoginPopup = () =>{
         this.setState({showLoginPopup: false});
     }
-
+    authenticate = () =>{
+        this.setState({sisAuth:true});
+    }
     render(){
         return(
+
+
             <Fragment>
                 <Modal show={this.state.showLoginPopup} clickEvent={this.hideLoginPopup}>
-                    <Login />
+                    <Login loginEvent={this.authenticate}/>
                 </Modal>
                 <div className={headerCSS.HeaderContainer}>
                     <Logo PanelClass={headerCSS.LogoPanel} LogoClass={headerCSS.Logo} />

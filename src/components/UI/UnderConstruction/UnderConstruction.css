@@ -1,0 +1,8 @@
+.imagePanel{
+    height: 100vh;
+}
+
+.image{
+    margin: auto;
+    transform: translate(20vw,20vh);
+}

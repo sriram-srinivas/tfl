@@ -46,10 +46,13 @@ const workSheetInfo = props => {
                     <div>
                         <SocialMedia SocialMediaList={languageDictionary.SocialMedia_share} sm={workSheetInfoCSS.socialMediaIcon} />
                     </div>
+
                     <GalleryFilter 
+                        title={languageDictionary.bylevelLabel}
+                        FilterOptions={languageDictionary.GalleryLevelFilter}
                         GalleryFilterHeader={GalleryFilterCSS.GalleryFilterHeader}
-                        GalleryFilterPanel={GalleryFilterCSS.WorksheetInfoFilterPanel}
                         FilterDiv={GalleryFilterCSS.WorksheetInfoFilterDiv}
+                        GalleryFilterPanel={GalleryFilterCSS.WorksheetInfoFilterPanel}
                         FilterLink={GalleryFilterCSS.FilterLink}/>
                 </div>
             </div>

@@ -48,6 +48,7 @@ class Worksheets extends Component {
         
         let galleryLeftFilter = null;
         let galleryNav = null;
+        let gallerySort = null;
         let worksheetContent = null;
 
         if(this.state.activePage === "Gallery"){
@@ -91,6 +92,15 @@ class Worksheets extends Component {
                 </div>
                 <hr/>
             </Fragment>;
+            gallerySort = <div className={worksheetCSS.GallerySortPanel}>
+                    <select className={worksheetCSS.GallerySort}>
+                        <option selected="" value="popularity">Popularity</option>
+                        <option value="weightedRating">Highest Rated</option>
+                        <option value="dateCreated">Most Recent</option>
+                        <option value="title">Title</option>
+                        <option value="relevance">Relevance</option>
+                    </select>
+            </div>;
             worksheetContent=<Gallery 
                 paginatorClickEvent = {this.worksheetListPaginator}
                 currentPage={this.state.currentPage} 
@@ -123,6 +133,7 @@ class Worksheets extends Component {
                     <i className={"fa fa-search "+worksheetCSS.SearchBarIcon} aria-hidden="true"></i>
                     </SearchBar>
                     {galleryNav}
+                    {gallerySort}
                     {worksheetContent}
                 </div>
                 <div className={worksheetCSS.RightADBanner}>

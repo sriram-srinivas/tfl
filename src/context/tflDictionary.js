@@ -36,6 +36,12 @@ const labelDictionary = {
     'connectGO':'Connect with Google',
     'disconnectGO':'Disconnect from Google',
     'deActivateAccLabel':'Deactivate Account',
+    'schoolInstLabel':'School/Institution',
+    'EduTeacherLabel':'Educator/Teacher',
+    'ParentsLabel':'Parents',
+    'selectCategory':'Select Your Category',
+    'selectGrade':'Select Grade',
+    'createAccount':'Create Account',
     dummyList :[
         {"id":1,"title":"Human", "rating":1.0, "Description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore...","url":"https://cdn.education.com/files/1133001_1134000/1133295/file_1133295.gif?width=600","downloadsCount":1101},
         {"id":2,"title":"Birds", "rating":1.5, "Description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore...","url":"https://cdn.education.com/files/1119001_1120000/1119502/file_1119502.png?width=600","downloadsCount":1292},

@@ -1,0 +1,102 @@
+.custTypePanel,.GradePanel{
+    text-align: center;
+}
+
+.custTypeBtn{
+        padding:15px 35px;
+        color: #fff;
+        background-color: #186AAA;
+        border: none;
+        width: 60%;
+        border-radius: 10px;
+        cursor: pointer;
+        box-sizing: border-box;
+        margin: 2% auto;
+}
+
+.GradeDiv{
+    display: inline-block;
+    padding: 2%;
+    margin: 0% 2%; 
+}
+
+.GradeDiv input{
+    margin-left: 3px;
+}
+
+
+/*===========================*/
+
+.LogoPanel{
+    display: block;
+ }
+ 
+ .Logo{
+     width:90px;
+     margin:auto;
+     display: block;
+ }
+ 
+ .LoginLabelPanel{
+     text-align: center;
+ }
+ 
+ .LoginLabel{
+     margin: .5em 0;
+     font-weight: normal;
+     display: inline-block;
+ }
+ 
+ .InputPanel{
+     text-align: center;
+ }
+ 
+ .InputText{
+     display: block;
+     margin: auto;
+     margin: 2% auto;
+     width: 90%;
+     padding: 3% 1%;
+     border: 1px solid #AAA;
+     border-radius: 5px;
+     box-sizing: border-box;
+ }
+ 
+ .InputText::placeholder{
+     font-size: 11px;
+ }
+ 
+ .forgotPanel{
+     text-align: right;
+     padding: 1% 4%;
+ }
+ 
+ .forgotLink{
+     font-size: 11px;
+     cursor: pointer;
+ }
+ 
+ .forgotLink:hover{
+     text-decoration: underline;
+ }
+ 
+ .loginButtonPanel,.oAuthPanel{
+     text-align: center;
+ }
+ 
+ .loginButton{
+     padding:10px 35px;
+     color: #fff;
+     background-color: #186AAA;
+     border: none;
+     width: 90%;
+     border-radius: 10px;
+     cursor: pointer;
+     box-sizing: border-box;
+     margin: 2% auto;
+ }
+ 
+ .oAuthIcon{
+     margin: 2%;
+     font-size: 15px;
+ }

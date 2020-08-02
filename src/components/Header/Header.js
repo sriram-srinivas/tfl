@@ -4,6 +4,7 @@ import dictionary from '../../context/tflDictionary';
 import Button from '../Button/Button';
 import Modal from '../UI/Modal/Modal';
 import Login from '../Authenticate/Login/Login';
+import SignUp from '../Authenticate/SignUp/SignUp';
 import Logo from '../Logo/Logo';
 import ProfileOption from '../Profile/ProfileOptions/ProfileOptions';
 
@@ -13,6 +14,7 @@ class Header extends Component{
     state={
         isAuth:false,
         showLoginPopup:false,
+        showSignUpPopup:false,
     };
 
     showLoginPopup = () =>{
@@ -22,8 +24,17 @@ class Header extends Component{
     hideLoginPopup = () =>{
         this.setState({showLoginPopup: false});
     }
+
+    showSignUpPopup = () =>{
+        this.setState({showSignUpPopup: true});
+    }
+
+    hideSignUpPopup = () =>{
+        this.setState({showSignUpPopup: false});
+    }
+
     authenticate = () =>{
-        this.setState({isAuth:true,showLoginPopup: false});
+        this.setState({isAuth:true,showLoginPopup: false,showSignUpPopup: false});
     }
     logout = () =>{
         this.setState({isAuth:false});
@@ -36,7 +47,8 @@ class Header extends Component{
                             <label>{this.context.loginLabel}</label>
                         </Button>;
         let account = <Button btnType="button" 
-                        styleClass={headerCSS.signupButton}>
+                        styleClass={headerCSS.signupButton}
+                        clickEvent={this.showSignUpPopup}>
                         <label>{this.context.signUpLabel}</label>
                     </Button>;
         if(this.state.isAuth){
@@ -50,6 +62,9 @@ class Header extends Component{
             <Fragment>
                 <Modal show={this.state.showLoginPopup} clickEvent={this.hideLoginPopup}>
                     <Login loginEvent={this.authenticate}/>
+                </Modal>
+                <Modal show={this.state.showSignUpPopup} clickEvent={this.hideSignUpPopup}>
+                    <SignUp loginEvent={this.authenticate} initStep={1}/>
                 </Modal>
                 <div className={headerCSS.HeaderContainer}>
                     <Logo PanelClass={headerCSS.LogoPanel} LogoClass={headerCSS.Logo} />

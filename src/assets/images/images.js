@@ -5,6 +5,7 @@ export const logoBlueSmall = require('./logo/logoBlue400.png');
 export const logoBlackTFL = require('./logo/logoBlackTFL.png');
 export const comingSoon = require('./UC_CS.png');
 export const avatar = require('./Avatar.png');
+export const noDwld = require('./noDWLD.png');
 
 export const dummy = require('./worksheetThumb.jpg');
 export const preview_Human = require('./Thumbnail/Human.jpg');

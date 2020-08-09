@@ -14,8 +14,8 @@ const login = props =>{
                 <h3 className={loginCSS.LoginLabel}>{languageDictionary.loginLabel}</h3>
             </div>
             <div className={loginCSS.InputPanel}>
-                <InputText placeHolderText={languageDictionary.emailLabel} styleClass={loginCSS.InputText}/>
-                <InputText placeHolderText={languageDictionary.pwdLabel} styleClass={loginCSS.InputText}/>
+                <InputText type="text" placeHolderText={languageDictionary.emailLabel} styleClass={loginCSS.InputText}/>
+                <InputText type="password" placeHolderText={languageDictionary.pwdLabel} styleClass={loginCSS.InputText}/>
             </div>
             <div className={loginCSS.forgotPanel}>
                 <label className={loginCSS.forgotLink}>{languageDictionary.forgotPWD}</label>

@@ -38,6 +38,7 @@ class Header extends Component{
     }
     logout = () =>{
         this.setState({isAuth:false});
+        window.location.href="http://localhost:3000/";
         
     }
     render(){

@@ -44,8 +44,8 @@ class SignUp extends Component{
                                         <h3 className={SignUpCSS.LoginLabel}>{this.context.signUpLabel}</h3>
                                     </div>
                                     <div className={SignUpCSS.InputPanel}>
-                                        <InputText placeHolderText={this.context.emailLabel} styleClass={SignUpCSS.InputText}/>
-                                        <InputText placeHolderText={this.context.pwdLabel} styleClass={SignUpCSS.InputText}/>
+                                        <InputText type="text" placeHolderText={this.context.emailLabel} styleClass={SignUpCSS.InputText}/>
+                                        <InputText type="password" placeHolderText={this.context.pwdLabel} styleClass={SignUpCSS.InputText}/>
                                     </div>
                                     <div className={SignUpCSS.loginButtonPanel}>
                                         <Button btnType="button" clickEvent={this.props.loginEvent}

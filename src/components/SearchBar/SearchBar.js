@@ -7,7 +7,7 @@ const searchBar = props =>{
     const languageDictionary = useContext(dictionary);
     return(
         <div className={props.searchDiv}>
-            <InputText placeHolderText={languageDictionary.searchPlaceHolder} styleClass={props.searchBar}/>
+            <InputText type="text" placeHolderText={languageDictionary.searchPlaceHolder} styleClass={props.searchBar}/>
             {props.children}
         </div>
     );

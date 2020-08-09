@@ -1,0 +1,12 @@
+.noDwldPanel{
+    text-align: center;
+}
+
+.noDwldPanel img{
+    height:50vh;
+}
+
+.noDwldLabel{
+    font-weight: normal;
+    color: #186AAA;
+}

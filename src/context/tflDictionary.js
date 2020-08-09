@@ -42,6 +42,12 @@ const labelDictionary = {
     'selectCategory':'Select Your Category',
     'selectGrade':'Select Grade',
     'createAccount':'Create Account',
+    'noDwld':'You have 0 Downloads',
+    'startDwld':'Please visit our Library to start Downloading....',
+    'myDwldLabel':'My Downloads',
+    'myCollectionLabel':'My Collection',
+    'noCollection':'Your Collection is empty',
+    'startCollection':'Please visit our Library to add items to your collection....',
     dummyList :[
         {"id":1,"title":"Human", "rating":1.0, "Description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore...","url":"https://cdn.education.com/files/1133001_1134000/1133295/file_1133295.gif?width=600","downloadsCount":1101},
         {"id":2,"title":"Birds", "rating":1.5, "Description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore...","url":"https://cdn.education.com/files/1119001_1120000/1119502/file_1119502.png?width=600","downloadsCount":1292},

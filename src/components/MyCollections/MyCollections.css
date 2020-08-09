@@ -1,0 +1,16 @@
+.collectionPanel{
+    display: flex;
+}
+
+.leftCollectionPanel,.rightCollectionPanel{
+    width: 15%;
+}
+
+.CollectionPanel{
+    width: 68%;
+}
+
+.collectionLabel{
+    font-weight: normal;
+    color: #186AAA;
+}

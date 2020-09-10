@@ -1,5 +1,4 @@
 import React,{Component, Fragment} from 'react';
-import axios from 'axios';
 import AccSettingsCSS from './AccountSettings.css';
 import dictionary from '../../context/tflDictionary';
 import Field from '../AccountSettings/Field/Field';

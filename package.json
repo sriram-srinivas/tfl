@@ -2,7 +2,7 @@
   "name": "tfl",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://sriram-srinivas.github.io/TFL",
+  "homepage": "https://sriram-srinivas.github.io/TFL/",
   "dependencies": {
     "autoprefixer": "7.1.6",
     "axios": "^0.19.2",
